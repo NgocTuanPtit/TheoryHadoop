@@ -32,7 +32,7 @@
 -**Persistence** lưu trữ lại giá trị tính toán của RDD để sau này gọi action trên RDD sẽ không mất thời gian tính toán lại từ đầu.
 
 ---
--**Spark Streaming** là một phần mở rộng của Spark API cho phép xử lý luồng dữ liệu trực tiếp có khả năng mở rộng, thông lượng cao, có khả năng chịu lỗi. Dữ liệu có thể được hấp thụ từ nhiều nguồn khác nhau như Kafka, Flumem kinesis, or TCP sockets và có thể được xử lý bới các thuật toán phức tạp được thể hiện với các chức năng  cao cấp như *map, reduce, join và windown*. Về cơ bản Spark Streaming sẽ nhận dữ liệu từ các nguồn Streaming data (được gọi là **receiver data**). Sau đó nó chia nhỏ cái receiver data đó ra và chứa trong các **batch data**, mỗi **batch** được xem như là một tập các RDD. **Một dãy các RDD thì Spark gọi đó là DStream**.
+-**Spark Streaming** là một phần mở rộng của Spark API cho phép xử lý luồng dữ liệu trực tiếp có khả năng mở rộng, thông lượng cao, có khả năng chịu lỗi. Dữ liệu có thể được hấp thụ từ nhiều nguồn khác nhau như Kafka, Flumem kinesis, or TCP sockets và có thể được xử lý bới các thuật toán phức tạp được thể hiện với các chức năng  cao cấp như *map, reduce, join và windown*. Về cơ bản Spark Streaming sẽ nhận dữ liệu từ các nguồn Streaming data (được gọi là **receiver data**). Sau đó nó chia nhỏ cái receiver data đó ra và chứa trong các **batch data**, mỗi **batch data** được lưu trữ trong một RDD, các RDD này sau đó sẽ được xử lý bởi SpajDD mới. **Một dãy các RDD thì Spark gọi đó là DStream**. Các RDD được tạo ra dựa trên các khoảng thời gian được cấu hình trong ứng dụng Spark Streaming, *nó đóng vai trò định mức tần số dữ liệu sẽ được sử lý bới ứng dụng.*
 
 
 
