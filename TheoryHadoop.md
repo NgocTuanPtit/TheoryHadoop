@@ -42,3 +42,5 @@
 
 
 https://codingpearls.com/big-data/apache-spark/viet-ung-dung-word-count-tren-spark-bang-scala-su-dung-intellij-idea-community.html
+
+https://docs.google.com/document/d/1FH20GlPcs9H0SJt7wsnacUwZEvcHi_NpxJ7TQbCM3Vg/edit#
