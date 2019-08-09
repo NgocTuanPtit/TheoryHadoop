@@ -38,3 +38,7 @@
 
 **NOTE**
 { Data frame là bộ dữ liệu phân tán tổ chức thành các cột được đặt tên. Tương đương với một bảng trong cơ sở dữ liệu quan hệ, nhưng với sự tối ưu hóa và phong phú hơn.}
+
+
+
+https://codingpearls.com/big-data/apache-spark/viet-ung-dung-word-count-tren-spark-bang-scala-su-dung-intellij-idea-community.html
