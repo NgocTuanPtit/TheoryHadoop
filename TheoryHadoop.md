@@ -1,6 +1,12 @@
 # TheoryWithHadoop
 ### 1. Các khái niệm 
 ---
+
+- Tạo thư mục trong HDFS, tham số truyền vào là list các thư mục cần tạo: **hdfs dfs -mkdir /nameFolder**
+- Xem nội dung thư mục trong HDFS: **hdfs dfs -ls /nameFolder**
+- Copy một hoặc nhiều file từ local file system vào HDFS: **hdfs dfs -put filename /folder_in_HDFS**
+- Download file trong HDFS về local file system: **hdfs dfs -get filename or path_of_file**
+- Xóa file hoặc thư mục trong HDFS: **hdfs dfs -rmr nameFile or nameFolder**
 - Spark cho phép xử lý dữ liệu lớn phân tán m cách hiệu quả và nhanh chóng. Spark có tốc độ xử lý nhanh gấp 100 lần so với Hadoop Mapreduce khi được cache trên bộ nhớ và nhanh hơn gấp 10 lần 10 nếu được cache trên đĩa.
 - Điểm nổi bật của Spark là các tập dữ liệu phân tán có khả năng phục hồi dữ liệu khi xyar ra lỗi đó là RDD, có thể lưu tạm thời trên bộ nhớ RAM, có khả năng chịu lỗi cao và tính toán song song, cung cấp cơ chế cache trên memory.
 - **RDD** là một tập các phần tử không thể thay đổi được phân tán. Phần tử ở đây là có thể là các đối tượng trong java, Scala, Python, hay do người dùng định nghĩa, RDD được chia thành nhiều Partition để dễ dàng lưu trữ, nhằm tính toán phân tán trên các nodes.
